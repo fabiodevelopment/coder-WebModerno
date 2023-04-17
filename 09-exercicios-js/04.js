@@ -3,14 +3,14 @@ const mesNome = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "ju
 function nomeDoMes(mesNumero) {
     const mesResultado = mesNome[mesNumero-1];
     if (mesNumero >= 1 && mesNumero <= 12) {
-        return mesResultado;
+        return console.log(mesResultado);
     } else {
         console.log("O numero precisa ser entre 1 e 12");
     }
 }
 
-console.log(nomeDoMes(1));
-console.log(nomeDoMes(4));
+nomeDoMes(1);
+nomeDoMes(4);
 
-console.log(nomeDoMes(0));
-console.log(nomeDoMes(13));
+nomeDoMes(0);
+nomeDoMes(13);
